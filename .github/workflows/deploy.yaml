@@ -9,6 +9,8 @@ on:
         type: choice
         options:
           - dev-saas
+          - private-dev
+          - prod-saas
       app_version:
         description: 'Application version to deploy'
         required: true
@@ -17,7 +19,7 @@ on:
         description: 'Application name'
         required: false
         type: string
-        default: zippy-metrics-test2
+        default: zippy-bp
 
 jobs:
 
@@ -31,7 +33,7 @@ jobs:
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'your-company-io',
-              repo: 'your-company-io-gitops',
+              repo: 'test-bp-gitops',
               workflow_id: 'update-environment.yaml',
               ref: 'main',
               inputs: {

@@ -8,7 +8,7 @@ on:
         required: true
         type: choice
         options:
-          - dev-saas
+          - private-dev
       app_version:
         description: 'Application version to deploy'
         required: true
@@ -17,7 +17,7 @@ on:
         description: 'Application name'
         required: false
         type: string
-        default: test1
+        default: test4
 
 jobs:
 

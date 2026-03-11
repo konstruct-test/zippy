@@ -8,7 +8,7 @@ on:
         required: true
         type: choice
         options:
-          - dev-saas
+          - dev-e2e-1-1773092721
       app_version:
         description: 'Application version to deploy'
         required: true
@@ -17,7 +17,7 @@ on:
         description: 'Application name'
         required: false
         type: string
-        default: rtes
+        default: test-private
 
 jobs:
 

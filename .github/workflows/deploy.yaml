@@ -17,7 +17,7 @@ on:
         description: 'Application name'
         required: false
         type: string
-        default: test2
+        default: test3
 
 jobs:
 

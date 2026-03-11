@@ -11,7 +11,7 @@ permissions:
 
 env:
   AWS_REGION: us-west-2
-  ASSUME_ROLE_ARN: 
+  ASSUME_ROLE_ARN: arn:aws:iam::555935582951:role/test2-github-application-role
 
 jobs:
   publish:
